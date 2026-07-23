@@ -1,0 +1,309 @@
+/* ═══════════════════════════════════════════════════════════════════
+   DESIGN SYSTEM — TOKENS
+   CSS Custom Properties · Generated 2026
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+
+  /* ── PRIMITIVE: Gray ramp ───────────────────────────────────────── */
+  --ds-gray-0:   #ffffff;
+  --ds-gray-50:  #fafafa;
+  --ds-gray-100: #f5f5f5;
+  --ds-gray-200: #e5e5e5;
+  --ds-gray-300: #d4d4d4;
+  --ds-gray-400: #a3a3a3;
+  --ds-gray-500: #737373;
+  --ds-gray-600: #525252;
+  --ds-gray-700: #404040;
+  --ds-gray-800: #262626;
+  --ds-gray-900: #171717;
+  --ds-gray-950: #0a0a0a;
+
+  /* ── PRIMITIVE: Status colors ───────────────────────────────────── */
+  --ds-green-50:  #f0fdf4;
+  --ds-green-100: #dcfce7;
+  --ds-green-500: #22c55e;
+  --ds-green-600: #16a34a;
+  --ds-green-700: #15803d;
+
+  --ds-yellow-50:  #fefce8;
+  --ds-yellow-100: #fef9c3;
+  --ds-yellow-500: #eab308;
+  --ds-yellow-600: #ca8a04;
+  --ds-yellow-700: #a16207;
+
+  --ds-red-50:  #fef2f2;
+  --ds-red-100: #fee2e2;
+  --ds-red-500: #ef4444;
+  --ds-red-600: #dc2626;
+  --ds-red-700: #b91c1c;
+
+  --ds-blue-50:  #eff6ff;
+  --ds-blue-100: #dbeafe;
+  --ds-blue-500: #3b82f6;
+  --ds-blue-600: #2563eb;
+  --ds-blue-700: #1d4ed8;
+
+  /* ── SEMANTIC: Background ───────────────────────────────────────── */
+  --ds-color-bg:           var(--ds-gray-0);
+  --ds-color-bg-subtle:    var(--ds-gray-50);
+  --ds-color-bg-muted:     var(--ds-gray-100);
+  --ds-color-bg-inverse:   var(--ds-gray-950);
+  --ds-color-bg-overlay:   rgba(0, 0, 0, 0.48);
+
+  /* ── SEMANTIC: Foreground ───────────────────────────────────────── */
+  --ds-color-fg:           var(--ds-gray-900);
+  --ds-color-fg-muted:     var(--ds-gray-500);
+  --ds-color-fg-subtle:    var(--ds-gray-400);
+  --ds-color-fg-inverse:   var(--ds-gray-0);
+  --ds-color-fg-disabled:  var(--ds-gray-300);
+
+  /* ── SEMANTIC: Border ───────────────────────────────────────────── */
+  --ds-color-border:       var(--ds-gray-200);
+  --ds-color-border-muted: var(--ds-gray-100);
+  --ds-color-border-strong:var(--ds-gray-400);
+
+  /* ── SEMANTIC: Accent / Brand ───────────────────────────────────── */
+  --ds-color-accent:       var(--ds-gray-950);
+  --ds-color-accent-hover: var(--ds-gray-800);
+  --ds-color-accent-fg:    var(--ds-gray-0);
+
+  /* ── SEMANTIC: Status ───────────────────────────────────────────── */
+  --ds-color-success:         var(--ds-green-600);
+  --ds-color-success-bg:      var(--ds-green-50);
+  --ds-color-success-border:  var(--ds-green-100);
+
+  --ds-color-warning:         var(--ds-yellow-600);
+  --ds-color-warning-bg:      var(--ds-yellow-50);
+  --ds-color-warning-border:  var(--ds-yellow-100);
+
+  --ds-color-error:           var(--ds-red-600);
+  --ds-color-error-bg:        var(--ds-red-50);
+  --ds-color-error-border:    var(--ds-red-100);
+
+  --ds-color-info:            var(--ds-blue-600);
+  --ds-color-info-bg:         var(--ds-blue-50);
+  --ds-color-info-border:     var(--ds-blue-100);
+
+  /* ── TYPOGRAPHY: Font families ──────────────────────────────────── */
+  --ds-font-display:  'EB Garamond', Georgia, 'Times New Roman', serif;
+  --ds-font-body:     'IBM Plex Mono', 'Courier New', monospace;
+  --ds-font-mono:     'IBM Plex Mono', 'Courier New', monospace;
+
+  /* ── TYPOGRAPHY: Type scale ─────────────────────────────────────── */
+  --ds-text-xs:     0.75rem;     /* 12px — label (smallest) */
+  --ds-text-sm:     0.8125rem;   /* 13px — label      */
+  --ds-text-base:   0.875rem;    /* 14px — body       */
+  --ds-text-md:     1rem;        /* 16px — body-lg    */
+  --ds-text-lg:     1.25rem;     /* 20px — heading-sm */
+  --ds-text-xl:     1.5rem;      /* 24px — heading    */
+  --ds-text-2xl:    2rem;        /* 32px — heading-lg */
+  --ds-text-3xl:    2.5rem;      /* 40px — display-sm */
+  --ds-text-display:3.75rem;     /* 60px — display    */
+
+  /* ── TYPOGRAPHY: Line height ────────────────────────────────────── */
+  --ds-leading-none:    1;
+  --ds-leading-tight:   1.25;
+  --ds-leading-snug:    1.375;
+  --ds-leading-normal:  1.5;
+  --ds-leading-relaxed: 1.625;
+
+  /* ── TYPOGRAPHY: Letter spacing ─────────────────────────────────── */
+  --ds-tracking-tight:   -0.025em;
+  --ds-tracking-normal:   0;
+  --ds-tracking-wide:     0.05em;
+  --ds-tracking-wider:    0.1em;
+  --ds-tracking-widest:   0.2em;
+
+  /* ── SPACING (4px base grid) ────────────────────────────────────── */
+  --ds-space-0:   0;
+  --ds-space-px:  1px;
+  --ds-space-0-5: 0.125rem;   /*  2px */
+  --ds-space-1:   0.25rem;    /*  4px */
+  --ds-space-1-5: 0.375rem;   /*  6px */
+  --ds-space-2:   0.5rem;     /*  8px */
+  --ds-space-2-5: 0.625rem;   /* 10px */
+  --ds-space-3:   0.75rem;    /* 12px */
+  --ds-space-4:   1rem;       /* 16px */
+  --ds-space-5:   1.25rem;    /* 20px */
+  --ds-space-6:   1.5rem;     /* 24px */
+  --ds-space-8:   2rem;       /* 32px */
+  --ds-space-10:  2.5rem;     /* 40px */
+  --ds-space-12:  3rem;       /* 48px */
+  --ds-space-16:  4rem;       /* 64px */
+  --ds-space-20:  5rem;       /* 80px */
+  --ds-space-24:  6rem;       /* 96px */
+
+  /* ── RADIUS ─────────────────────────────────────────────────────── */
+  --ds-radius-none: 0;
+  --ds-radius-sm:   2px;
+  --ds-radius-md:   4px;
+  --ds-radius-lg:   8px;
+  --ds-radius-xl:   12px;
+  --ds-radius-full: 9999px;
+
+  /* ── ELEVATION / SHADOW ─────────────────────────────────────────── */
+  --ds-shadow-0: none;
+  --ds-shadow-1: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --ds-shadow-2: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --ds-shadow-3: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --ds-shadow-4: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* ── MOTION: Duration ───────────────────────────────────────────── */
+  --ds-duration-instant: 0ms;
+  --ds-duration-fast:    80ms;
+  --ds-duration-base:    150ms;
+  --ds-duration-slow:    250ms;
+  --ds-duration-slower:  400ms;
+  --ds-duration-lazy:    700ms;
+
+  /* ── MOTION: Easing ─────────────────────────────────────────────── */
+  --ds-ease-linear:  linear;
+  --ds-ease-in:      cubic-bezier(0.4, 0, 1, 1);
+  --ds-ease-out:     cubic-bezier(0, 0, 0.2, 1);
+  --ds-ease-in-out:  cubic-bezier(0.4, 0, 0.2, 1);
+  --ds-ease-default: cubic-bezier(0.16, 1, 0.3, 1);
+  --ds-ease-spring:  cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Z-INDEX ────────────────────────────────────────────────────── */
+  --ds-z-base:      0;
+  --ds-z-raised:    100;
+  --ds-z-dropdown:  1000;
+  --ds-z-sticky:    1100;
+  --ds-z-overlay:   1200;
+  --ds-z-modal:     1300;
+  --ds-z-toast:     1400;
+  --ds-z-tooltip:   1500;
+
+  /* ── BREAKPOINTS (reference only) ──────────────────────────────── */
+  /* --ds-bp-sm:  640px  */
+  /* --ds-bp-md:  768px  */
+  /* --ds-bp-lg:  1024px */
+  /* --ds-bp-xl:  1280px */
+  /* --ds-bp-2xl: 1536px */
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   THEME CSS VARIABLES  — driven by [data-theme] on root element
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root,
+[data-theme="light"] {
+  --t-bg:             #ffffff;
+  --t-bg-subtle:      #fafafa;
+  --t-bg-muted:       #f5f5f5;
+  --t-bg-card:        #ffffff;
+  --t-fg:             #171717;
+  --t-fg-2:           #404040;
+  --t-fg-muted:       #737373;
+  --t-fg-subtle:      #a3a3a3;
+  --t-border:         #e5e5e5;
+  --t-border-subtle:  #f5f5f5;
+  --t-border-strong:  #d4d4d4;
+  /* accent */
+  --t-accent:         #171717;
+  --t-accent-hover:   #404040;
+  --t-accent-fg:      #ffffff;
+}
+
+[data-theme="main"] {
+  --t-bg:             #F5E9D8;
+  --t-bg-subtle:      #EEE0C8;
+  --t-bg-muted:       #E6D5B8;
+  --t-bg-card:        #FDF6EE;
+  --t-fg:             #3E2C23;
+  --t-fg-2:           #5C4035;
+  --t-fg-muted:       #7A5C4F;
+  --t-fg-subtle:      #9E8070;
+  --t-border:         rgba(62, 44, 35, 0.15);
+  --t-border-subtle:  rgba(62, 44, 35, 0.08);
+  --t-border-strong:  rgba(62, 44, 35, 0.28);
+  /* accent — burnt orange */
+  --t-accent:         #E76F2E;
+  --t-accent-hover:   #CF5E1E;
+  --t-accent-fg:      #FDF6EE;
+}
+
+[data-theme="playful"] {
+  --t-bg:             #FFFCEB;
+  --t-bg-subtle:      #FEF7D6;
+  --t-bg-muted:       #FEF2C1;
+  --t-bg-card:        #FFFFFF;
+  --t-fg:             #3E2C23;
+  --t-fg-2:           #5C4035;
+  --t-fg-muted:       #7A5C4F;
+  --t-fg-subtle:      #9E8070;
+  --t-border:         rgba(62, 44, 35, 0.15);
+  --t-border-subtle:  rgba(62, 44, 35, 0.08);
+  --t-border-strong:  rgba(62, 44, 35, 0.28);
+  /* accent — bright orange */
+  --t-accent:         #FFA239;
+  --t-accent-hover:   #FF8F1F;
+  --t-accent-fg:      #ffffff;
+}
+
+[data-theme="dark"] {
+  --t-bg:             #111111;
+  --t-bg-subtle:      #1a1a1a;
+  --t-bg-muted:       #222222;
+  --t-bg-card:        #1e1e1e;
+  --t-fg:             #e5e5e5;
+  --t-fg-2:           #d4d4d4;
+  --t-fg-muted:       #a3a3a3;
+  --t-fg-subtle:      #737373;
+  --t-border:         rgba(255, 255, 255, 0.09);
+  --t-border-subtle:  rgba(255, 255, 255, 0.05);
+  --t-border-strong:  rgba(255, 255, 255, 0.18);
+  /* accent — inverted light */
+  --t-accent:         #e5e5e5;
+  --t-accent-hover:   #d4d4d4;
+  --t-accent-fg:      #111111;
+}
+
+/* ── SIDEBAR DEMO TOKENS — for AppShellShowcase inner sidebar ─────── */
+:root,
+[data-theme="light"] {
+  --t-s-bg:     #111111;
+  --t-s-border: rgba(255, 255, 255, 0.07);
+  --t-s-text:   #e5e5e5;           /* 14.3:1 ✓ */
+  --t-s-muted:  #888888;           /* 5.65:1 ✓  — was #525252 = 2.4:1 ✗ */
+  --t-s-active: #262626;
+  --t-s-avatar: #3a3a3a;
+}
+[data-theme="main"] {
+  --t-s-bg:     #3E2C23;
+  --t-s-border: rgba(245, 233, 216, 0.1);
+  --t-s-text:   #F5E9D8;                    /* 12.5:1 ✓ */
+  --t-s-muted:  rgba(245, 233, 216, 0.78);  /* 8.1:1 ✓  — was 0.4 = 3.3:1 ✗ */
+  --t-s-active: rgba(231, 111, 46, 0.35);
+  --t-s-avatar: #5C3D2E;
+}
+[data-theme="playful"] {
+  /* Vibrant coral sidebar with white text for high contrast */
+  --t-s-bg:     #FF5656;
+  --t-s-border: rgba(255, 255, 255, 0.2);
+  --t-s-text:   #ffffff;                    /* 4.5:1 ✓ */
+  --t-s-muted:  rgba(255, 255, 255, 0.8);    /* 3.6:1 ✓ */
+  --t-s-active: #FFA239;                    /* bright orange for active state */
+  --t-s-avatar: rgba(140, 228, 255, 0.3);   /* cyan tint for avatars */
+}
+[data-theme="dark"] {
+  --t-s-bg:     #0a0a0a;
+  --t-s-border: rgba(255, 255, 255, 0.06);
+  --t-s-text:   #e5e5e5;           /* 15.2:1 ✓ */
+  --t-s-muted:  #898989;           /* 6.16:1 ✓  — was #3a3a3a = 1.76:1 ✗ */
+  --t-s-active: #1e1e1e;
+  --t-s-avatar: #2d2d2d;
+}
+
+/* ── UTILITIES ─────────────────────────────────────────────────────── */
+/* Hides the scrollbar on a scrollable element while keeping it scrollable.
+   Used for device-mockup content (App Screens) where a visible scrollbar
+   track would break the illusion of a native mobile app. */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
